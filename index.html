@@ -38,11 +38,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link js-scroll-trigger" href="#research">Research</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#datasets">Datasets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#service">Service</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#fun">Fun</a>
@@ -54,9 +67,10 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="https://github.com/BryanBo-Cao">Github</a>
+              <a class="nav-link js-scroll-trigger" href="https://github.com/bryanbocao" target="_blank" rel="noreferrer">GitHub</a>
             </li>
-          </ul>
+
+</ul>
         </div>
       </div>
     </nav>
@@ -75,7 +89,7 @@
             </a>
           </div>
           <div id="myemail">
-            <p class="text-center">My Email: bo.cao.1 [at] stonybrook [dot] edu</p>
+            <p class="text-center">Email: boccao [at] cs.stonybrook [dot] edu</p>
           </div>
         </div>
 
@@ -86,30 +100,84 @@
 
         <!-- link: https://drive.google.com/drive/folders/1i9R77RbFu0H6w7ir4x2tM3W4Q6CujPqI -->
         <div id="resume" class="text-center">
-          <a href="document/BoCao_Resume.pdf" download>
+        <div id="resume" class="text-center">
+          <a href="document/BryanBoCao_CV.pdf" target="_blank" rel="noreferrer">
             <button class="btn btn-info">
-              Download my Resume
+              Download CV (PDF)
             </button>
           </a>
           <br>
           <br>
-          <a href="https://www.ericsson.com/research-blog/collaboration-augmented-reality-summer-labs/">
+
+          <a href="https://scholar.google.com/citations?user=czcKhLAAAAAJ" target="_blank" rel="noreferrer">
             <button class="btn btn-info">
-              Former Ericsson Research Intern
+              Google Scholar
             </button>
           </a>
           |
-          Former IBM Test Engineer
+          <a href="https://www.linkedin.com/in/bryanbocao" target="_blank" rel="noreferrer">
+            <button class="btn btn-info">
+              LinkedIn
+            </button>
+          </a>
           |
-          Robotics Research Assistant/Software Developer in <a href="http://iron-lab.org/team/"><button class="btn btn-info">IronLab@CU-Boulder</button></a>
-          <a href="https://www.colorado.edu/atlas/bryan-bo-cao"><button class="btn btn-info">Me in ATLAS</button></a>
+          <a href="https://github.com/bryanbocao" target="_blank" rel="noreferrer">
+            <button class="btn btn-info">
+              GitHub
+            </button>
+          </a>
+
+          <br>
+          <br>
+
+          Ph.D. Candidate (Stony Brook University) • Nokia Bell Labs Research Intern/Co-op (Jun 2021 – Fall 2025)
         </div>
+        <br/>
+</div>
         <br/>
         <div id="my words">
           "With little power and capacity, but enormous passion I have, I hope to make an impact on the world by technology."
         </div>
       </div>
     </header>
+
+
+    <!-- Research Section -->
+    <section id="research">
+      <div class="container">
+        <h2 class="text-center">Research</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p class="lead text-center">
+              I work on multimodal learning (vision + IMU + Wi-Fi FTM), efficient machine learning (few-class evaluation, pruning, model selection),
+              and robot visual navigation (hierarchical RL, metric learning, 3D Gaussian Splatting).
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Current focus</h4>
+                <ul>
+                  <li>Vision–wireless identity association & cross-modal trajectory reconstruction</li>
+                  <li>Few-class regime: benchmark tooling + dataset difficulty measurement</li>
+                  <li>Efficient inference: pruning and right-sized model selection</li>
+                  <li>Embodied navigation: representation learning and mapping</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h4>Affiliations</h4>
+                <ul>
+                  <li>Ph.D. Candidate, Stony Brook University</li>
+                  <li>Research Intern/Co-op, Nokia Bell Labs (Jun 2021 – Fall 2025)</li>
+                </ul>
+                <p class="small text-muted">
+                  Keywords: multimodal AI, efficient ML, computer vision, embodied navigation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
@@ -186,21 +254,203 @@
       </div>
     </section>
 
+    
     <!-- Publications Section -->
     <section class="success" id="publications">
       <div class="container">
-        <h2 class="text-center">Blog</h2>
+        <h2 class="text-center">Publications</h2>
         <hr class="star-light">
         <div class="row">
-            <span class="skills"><a href="https://www.ericsson.com/research-blog/collaboration-augmented-reality-summer-labs/"><button class="btn btn-info">Collaboration on Augmented Reality – Summer in the Labs</button></a></span>
-        </div>
-        <div class="row">
-            <span class="skills"><a href="https://github.com/BryanBo-Cao/SwarmIntelligence-NeuralNetwork/blob/master/si-class-evolving.pdf"><button class="btn btn-info">Reinforcement learning of an obstacle-avoiding and light-seeking neural-network robot controller using HyperNEAT and ant-colony optimization</button></a></span>
+          <div class="col-lg-10 mx-auto">
+            <p class="text-center">Selected publications and resources (links to PDFs / OpenReview / arXiv when available).</p>
+
+            <h4>2025</h4>
+            <ul class="pub-list">
+              <li>
+                <b>Few-Class Arena: A Benchmark for Efficient Selection of Vision Models and Dataset Difficulty Measurement</b> (ICLR 2025)
+                • <a href="https://openreview.net/pdf?id=2ET561DyPe" target="_blank" rel="noreferrer">OpenReview PDF</a>
+                • <a href="https://arxiv.org/abs/2411.01099" target="_blank" rel="noreferrer">arXiv</a>
+                • <a href="https://github.com/fewclassarena/fca" target="_blank" rel="noreferrer">Code</a>
+              </li>
+              <li>
+                <b>A Landmark-Aware Visual Navigation Dataset for Map Representation Learning</b> (HRI 2025)
+              </li>
+            </ul>
+
+            <h4>2024</h4>
+            <ul class="pub-list">
+              <li><b>A Lightweight Measure of Classification Difficulty from Application Dataset Characteristics</b> (ICPR 2024)</li>
+              <li><b>OVIDA: Orchestrator for Video Analytics on Disaggregated Architecture</b> (SEC 2024)</li>
+              <li>
+                <b>Representation Similarity: A Better Guidance of DNN Layer Sharing for Edge Computing without Training</b> (MobiCom 2024 S3 Workshop)
+              </li>
+              <li><b>Feudal Networks for Visual Navigation</b> (CVPR 2024 Embodied AI Workshop)</li>
+            </ul>
+
+            <h4>2023</h4>
+            <ul class="pub-list">
+              <li>
+                <b>ViFiT: Reconstructing Vision Trajectories from IMU and Wi-Fi Fine Time Measurements</b> (MobiCom 2023 ISACom Workshop)
+                • <a href="https://www3.cs.stonybrook.edu/~jain/papers/ViFit_ISACOM.pdf" target="_blank" rel="noreferrer">PDF</a>
+                • <a href="https://arxiv.org/abs/2310.03140" target="_blank" rel="noreferrer">arXiv</a>
+                • <a href="https://dl.acm.org/doi/10.1145/3615984.3616503" target="_blank" rel="noreferrer">ACM DL</a>
+              </li>
+            </ul>
+
+            <h4>2022</h4>
+            <ul class="pub-list">
+              <li>
+                <b>ViTag: Online WiFi FTM Aided Vision-Motion Identity Association in Multi-person Environments</b> (IEEE SECON 2022) • Best Demo Award
+                • <a href="https://www3.cs.stonybrook.edu/~jain/papers/ViTag_SECON2022.pdf" target="_blank" rel="noreferrer">PDF</a>
+                • <a href="https://github.com/bryanbocao/vitag" target="_blank" rel="noreferrer">Code</a>
+              </li>
+              <li>
+                <b>Vi-Fi: Associating Moving Subjects across Vision and Wireless Sensors</b> (IPSN 2022)
+                • <a href="https://www.winlab.rutgers.edu/~hansiiii/papers/ViFi_Paper___IPSN_2022__Camera_Ready_.pdf" target="_blank" rel="noreferrer">PDF</a>
+              </li>
+            </ul>
+
+            <h4>Preprints / Under submission</h4>
+            <ul class="pub-list">
+              <li><b>StatsMerging: Statistics-Guided Model Merging via Task-Specific Teacher Distillation</b></li>
+              <li><b>YOPO-Nav: Visual Navigation using 3DGS Graphs from One-Pass Videos</b></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Fun Section -->
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="text-center">Experience</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h4>Nokia Bell Labs — Research Intern / Co-op (Jun 2021 – Fall 2025)</h4>
+            <ul>
+              <li>Structural pruning for CNNs (ResNet) and Transformers (ViT); explored zero-shot pruning while retaining accuracy.</li>
+              <li>Class-Aware Structural Pruning (CASP) using Grad-CAM gradients for few-class settings.</li>
+              <li>Class-similarity guided model selection for right-sized models in deployment scenarios.</li>
+            </ul>
+
+            <h4>Stony Brook University — Research Assistant (Jan 2021 – May 2026 expected)</h4>
+            <ul>
+              <li>Vision–wireless identity association using camera + smartphone IMU + Wi-Fi FTM.</li>
+              <li>Sequence models (BiLSTM, Transformers) and contrastive learning for cross-modal trajectory reconstruction.</li>
+              <li>Robot visual navigation: hierarchical RL, metric learning, and 3D Gaussian Splatting.</li>
+            </ul>
+
+            <h4>Earlier roles</h4>
+            <ul>
+              <li>Sunrise Technology @ CEWIT — autonomous driving pipeline + Jetson TX1 end-to-end CNN.</li>
+              <li>Ericsson Silicon Valley — AR collaboration system using HoloLens.</li>
+              <li>IBM ISTC — enterprise server testing; Redfish report auto-generation front-end work.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="success" id="awards">
+      <div class="container">
+        <h2 class="text-center">Honors & Awards</h2>
+        <hr class="star-light">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <ul class="pub-list">
+              <li>Bell Labs Breakthrough Project selection (Dec 2024)</li>
+              <li>Outstanding Innovation Award, Nokia Bell Labs (Aug 2024)</li>
+              <li>Outstanding Student Research Award, Nokia Bell Labs (Aug 2023)</li>
+              <li>Best Demonstration Award, IEEE SECON (Sep 2022)</li>
+              <li>Beverly Sears Graduate Student Grant Award (Sep 2017)</li>
+              <li>First Class Scholarship (Top 3%), Guangdong University of Technology (Jun 2010)</li>
+              <li>Second Class Scholarship (Top 8%), Guangdong University of Technology (Jun 2010)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Datasets Section -->
+    <section id="datasets">
+      <div class="container">
+        <h2 class="text-center">Datasets</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <ul>
+              <li><b>YOPO-Campus</b> (under submission, 2026) — visual navigation dataset collected on Busch Campus, Rutgers University.</li>
+              <li><b>LAVN</b> (HRI 2025) — Landmark-Aware Visual Navigation dataset for exploration policies and map building.</li>
+              <li><b>Vi-Fi dataset</b> (IPSN 2022) — large-scale multimodal dataset for vision–wireless systems.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+    <section class="success" id="service">
+      <div class="container">
+        <h2 class="text-center">Community Service</h2>
+        <hr class="star-light">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p class="text-center">
+              Reviewer: NeurIPS, ICLR, CVPR, ECCV, WACV, IMWUT, MM, TIP, TNNLS, PR
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentorship Section -->
+    <section id="mentorship">
+      <div class="container">
+        <h2 class="text-center">Mentorship</h2>
+        <hr class="star-primary">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <ul>
+              <li><b>Ranjith Merugu</b> (2025) — weight statistics-guided model merging via teacher distillation.</li>
+              <li><b>Venkata Nithish Reddy Bhumireddy</b> (2024) — CKA-based representation similarity on YOLO variants.</li>
+              <li><b>Abhinav Sharma</b> (2023–2024) — efficient CV pipelines (MobiCom 2024 S3 Workshop).</li>
+              <li><b>Purna Rao Mallepaddi</b> (2022) — CV pipelines; Kubernetes on Jetson Nano.</li>
+              <li><b>Omkar Manjrekar</b> (2021) — CV refactor; fast super-resolution; Kubernetes on Jetson Nano.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="success" id="skills">
+      <div class="container">
+        <h2 class="text-center">Technical Skills</h2>
+        <hr class="star-light">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Programming</h5>
+                <p>Python, Java</p>
+                <h5>Machine Learning</h5>
+                <p>PyTorch, TensorFlow, Keras, Scikit-learn</p>
+              </div>
+              <div class="col-md-6">
+                <h5>Computer Vision</h5>
+                <p>CNNs, Vision Transformers, YOLO, OpenCV</p>
+                <h5>Systems & Simulation</h5>
+                <p>Docker, Linux, Habitat-Sim, Habitat-Lab</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Fun Section -->
     <section id="fun">
       <div class="container">
         <h2 class="text-center">Fun</h2>
@@ -214,39 +464,51 @@
       </div>
     </section>
 
+    
     <!-- About Section -->
     <section class="success" id="about">
       <div class="container">
         <h2 class="text-center">About</h2>
         <hr class="star-light">
-        <center>
-          <div id="springbreak_news" class="col-lg-8 mx-auto">
-            <!-- http://www.buffzone.com/cu-news/ci_29686502/cu-boulder-engineering-students-use-spring-break-explore -->
-            <a href="http://www.coloradodaily.com/cu-news/ci_29686502/cu-boulder-engineering-students-use-spring-break-explore">
-              <img src="img/baxter_springbreak.jpg" height="300px"/>
-            </a>
-            <br/>
-            <br/>
-            <a href="http://www.coloradodaily.com/cu-news/ci_29686502/cu-boulder-engineering-students-use-spring-break-explore">
-              <button class="btn btn-info">News on Spring Break Research</button>
-            </a>
-            <br/>
-            <br/>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p class="lead text-center">
+              I’m a Ph.D. candidate at Stony Brook University working on multimodal AI, efficient machine learning, and embodied visual navigation.
+              I have several years of industry research experience at Nokia Bell Labs.
+            </p>
+
+            <h4>Education</h4>
+            <ul>
+              <li><b>Stony Brook University</b> — Ph.D. in Computer Science (Jan 2021 – May 2026 expected)</li>
+              <li><b>University of Colorado Boulder</b> — M.S. in Creative Technology and Design (Aug 2015 – Dec 2017)</li>
+              <li><b>Guangdong University of Technology</b> — B.S. in Information Engineering (Sep 2007 – Jul 2011)</li>
+            </ul>
+
+            <h4>Interests</h4>
+            <ul>
+              <li>Multimodal learning (vision + IMU + Wi-Fi)</li>
+              <li>Few-class evaluation and efficient inference</li>
+              <li>Robot learning and visual navigation</li>
+            </ul>
           </div>
-          <div id="springbreak_news_youtube" class="col-lg-8 mx-auto">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3Z_RUyM4Ftk" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </center>
+        </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact">
       <div class="container">
         <h2 class="text-center">Contact Me</h2>
         <hr class="star-primary">
         <div class="row">
           <div class="col-lg-8 mx-auto">
+            <div class="card mb-4" style="padding: 14px; border: 1px solid rgba(255,255,255,0.25); border-radius: 8px;">
+              <p class="mb-1"><b>Email:</b> boccao [at] cs.stonybrook [dot] edu</p>
+              <p class="mb-1"><b>Google Scholar:</b> <a href="https://scholar.google.com/citations?user=czcKhLAAAAAJ" target="_blank" rel="noreferrer">czcKhLAAAAAJ</a></p>
+              <p class="mb-1"><b>GitHub:</b> <a href="https://github.com/bryanbocao" target="_blank" rel="noreferrer">github.com/bryanbocao</a></p>
+              <p class="mb-0"><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/bryanbocao" target="_blank" rel="noreferrer">linkedin.com/in/bryanbocao</a></p>
+            </div>
+
             <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
             <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
             <form name="sentMessage" id="contactForm" novalidate>
@@ -294,7 +556,7 @@
                     </a>
                   </div>
                   <div id="myemail">
-                    <p class="text-center">My Email: bo.cao.1 [at] stonybrook [dot] edu</p>
+                    <p class="text-center">Email: boccao [at] cs.stonybrook [dot] edu</p>
                   </div>
                 </div>
                 <img class="img-fluid img-circle" src="img/BryanBoCao_ID_Photo.jpg" height="200px" width="200px" alt="">
@@ -337,7 +599,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              Copyright &copy; Bryan Bo Cao Website 2018
+              Copyright &copy; Bryan Bo Cao Website 2026
             </div>
           </div>
         </div>
