@@ -1,0 +1,81 @@
+{% assign post = include.post %}
+
+{%- comment -%}
+Support teaser in either:
+- teaser: /path/to/img
+- header:
+    teaser: /path/to/img
+{%- endcomment -%}
+{% assign teaser_url = post.teaser %}
+{% if teaser_url == nil and post.header and post.header.teaser %}
+  {% assign teaser_url = post.header.teaser %}
+{% endif %}
+
+{%- comment -%} Build links row (paper/pdf/openreview/code/project/...) {%- endcomment -%}
+{% assign links = "" %}
+{% if post.paperurl %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.paperurl | append: '" target="_blank" rel="noopener">paper</a>' %}
+{% endif %}
+{% if post.pdf %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.pdf | append: '" target="_blank" rel="noopener">pdf</a>' %}
+{% endif %}
+{% if post.openreview %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.openreview | append: '" target="_blank" rel="noopener">openreview</a>' %}
+{% endif %}
+{% if post.code %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.code | append: '" target="_blank" rel="noopener">code</a>' %}
+{% endif %}
+{% if post.dataset %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.dataset | append: '" target="_blank" rel="noopener">dataset</a>' %}
+{% endif %}
+{% if post.award %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.award | append: '" target="_blank" rel="noopener">award</a>' %}
+{% endif %}
+{% if post.project %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.project | append: '" target="_blank" rel="noopener">project</a>' %}
+{% endif %}
+{% if post.video %}
+  {% assign links = links | append: '<a class="pub__link" href="' | append: post.video | append: '" target="_blank" rel="noopener">video</a>' %}
+{% endif %}
+
+<article class="archive__item pubrow" itemscope itemtype="http://schema.org/CreativeWork">
+
+  {% if teaser_url %}
+    <a class="pubrow__thumb" href="{{ post.url | relative_url }}" aria-label="{{ post.title }}">
+      <img src="{{ teaser_url | relative_url }}" alt="">
+    </a>
+  {% else %}
+    <div class="pubrow__thumb pubrow__thumb--empty" aria-hidden="true"></div>
+  {% endif %}
+
+  <div class="pubrow__main">
+    <h2 class="archive__item-title pubrow__title" itemprop="headline">
+      {% if post.link %}
+        <a href="{{ post.link }}">{{ post.title }}</a>
+      {% else %}
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      {% endif %}
+    </h2>
+
+    {% if links != "" %}
+      <div class="pub__links">
+        {{ links }}
+      </div>
+    {% endif %}
+
+    {% if post.venue or post.date %}
+      <p class="archive__item-excerpt page__meta pub__meta">
+        {% if post.venue %}{{ post.venue }}{% endif %}
+        {% if post.venue and post.date %} · {% endif %}
+        {% if post.date %}{{ post.date | date: "%Y" }}{% endif %}
+      </p>
+    {% endif %}
+
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html | truncate: 160 }}
+      </p>
+    {% endif %}
+  </div>
+
+</article>
